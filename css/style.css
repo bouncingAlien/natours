@@ -79,7 +79,7 @@ body {
   color: transparent;
   transition: all .2s; }
   .heading-secondary:hover {
-    transform: skewY(-7deg) skewX(-4deg) scale(1.1);
+    transform: skewY(-7deg) skewX(-4deg) scale(1.1) translateY(-3rem);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4); }
 
 .heading-tertiary {
@@ -175,6 +175,9 @@ body {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
     position: absolute; }
     .composition__photo--p1 {
       top: -2rem;
@@ -186,11 +189,13 @@ body {
       top: 10rem;
       left: 20%; }
     .composition__photo:hover {
-      transform: scale(1.05);
+      transform: scale(1.05) translateY(-1.2rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
       margin: 1.5rem;
       z-index: 100;
       outline: 1.5rem solid #55c57a; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .row {
   max-width: 114rem;
