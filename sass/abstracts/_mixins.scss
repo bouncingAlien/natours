@@ -7,6 +7,7 @@
 }
 
 // MEDIA QUERY MANAGER 
+
 /*
 0      -  599px:    Phone
 600px  -  899px:    Tablet portrait
@@ -24,16 +25,28 @@ $breakpoint argumnet:
 */
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media (max-width: 9.584em) { @content }; // 599px
+    @if $breakpoint==phone {
+        @media (max-width: 37.4375em) {
+            @content
+        }
+        ; // 599px
     }
-    @if $breakpoint == tab-p {
-        @media (max-width: 56.1875em) { @content }; // 899px
+    @if $breakpoint==tab-p {
+        @media (max-width: 56.1875em) {
+            @content
+        }
+        ; // 899px
     }
-    @if $breakpoint == tab-l {
-        @media (max-width: 74.9375em) { @content }; // 1199px
+    @if $breakpoint==tab-l {
+        @media (max-width: 74.9375em) {
+            @content
+        }
+        ; // 1199px
     }
-    @if $breakpoint == big-s {
-        @media (min-width: 112.5em) { @content }; // 1800px
+    @if $breakpoint==big-s {
+        @media (min-width: 112.5em) {
+            @content
+        }
+        ; // 1800px
     }
 }
