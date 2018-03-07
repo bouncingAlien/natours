@@ -17,5 +17,7 @@
     },
     "homepage": "https://github.com/bouncingAlien/natours#readme",
     "devDependencies": {},
-    "dependencies": {}
+    "dependencies": {
+        "npm": "^5.7.1"
+    }
 }
